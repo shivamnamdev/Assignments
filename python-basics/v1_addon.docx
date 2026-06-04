@@ -1,0 +1,218 @@
+
+
+
+students = [
+    ["Rahul", 78, 85, 90, 67, 72],
+    ["Smeeta", 92, 88, 76, 95, 81],
+    ["Amit", 55, 60, 45, 70, 65],
+    ["Jaskeerat", 88, 91, 84, 79, 93],
+    ["Niraj", 40, 52, 61, 73, 85]
+] 
+
+# Expected Output:
+# Topper: Smeeta (Avg: 86.4)
+# Lowest: Amit (Avg: 59.0)
+# Students with 3+ subjects above 80: ["Smeeta", "Jaskeerat"]
+# Sorted by average: [Smeeta, Jaskeerat, Rahul, Amit, Niraj]
+# Improved in last subject: ["Rahul"->No, "Smeeta"->Yes, "Amit"->No, "Jaskeerat"->Yes, "Niraj"->Yes]
+
+# ------------------------------------------
+
+password = "Pyth0n@School2025!"
+
+
+# Expected Output:
+# First 4: "Pyth" -> Has uppercase: Yes, Has digit: No
+# Last 4: "25!" -> Has uppercase: No, Has digit: Yes
+# Uppercase: 2, Lowercase: 8, Digits: 5, Special: 2
+# Repeated patterns found: "0" appears... no consecutive repeats
+# Palindrome substrings (3-char): None found
+# Masked: "Py**************5!"
+# Rating: Strong
+
+# ------------------------------------------
+
+
+employees = {
+    101: {"name": "Rahul", "department": "IT", "salary": 45000, "attendance": 20},
+    102: {"name": "Priya", "department": "HR", "salary": 55000, "attendance": 22},
+    103: {"name": "Amit", "department": "IT", "salary": 30000, "attendance": 18},
+    104: {"name": "Sonal", "department": "Finance", "salary": 60000, "attendance": 21},
+    105: {"name": "Nischal", "department": "HR", "salary": 25000, "attendance": 22}
+}
+
+# Tasks:
+# 1. Calculate net salary for each employee
+# 2. Categorize into bands
+# 3. Find highest paying department (avg)
+# 4. Transfer emp 103 from IT to Finance
+# 5. Fire emp 105 (del)
+# 6. Promote emp 101 (salary + 10000)
+# 7. Print final payslip for all remaining employees
+
+
+# ------------------------------------------
+
+
+import json
+import os
+
+def create_log_file(filename):
+    """Create a new log file using 'x' mode. Handle FileExistsError."""
+    pass
+
+def add_task(filename, task_name, priority):
+    """Append a task as JSON line to file. Handle IOError."""
+    pass
+
+def read_tasks(filename):
+    """Read all tasks, return as list of dicts. Handle FileNotFoundError and JSONDecodeError."""
+    pass
+
+def search_task(filename, keyword):
+    """Search tasks containing keyword. Use readline() in a loop. Handle ValueError."""
+    pass
+
+def delete_task(filename, task_name):
+    """Read all tasks, remove matching one, rewrite file. Handle KeyError if not found."""
+    pass
+
+def generate_report(filename, report_file):
+    """Read tasks, write a formatted report to report_file. 
+    Use try-except-else-finally. Close files properly."""
+    pass
+
+# ------------------------------------------
+
+
+from abc import ABC, abstractmethod
+
+# ============ Abstract Base Class ============
+class HospitalSystem(ABC):
+    @abstractmethod
+    def execute():  # ERROR somewhere here
+        pass
+
+# ============ Person Class (Parent) ============
+class Person:
+    hospital_name = "City Care Hospital"  # Class Variable
+
+    def _init_(self, name, age, contact):  # ERROR somewhere here
+        self.name = name
+        self._contact = contact        # Protected
+        self__(age) = age              # ERROR somewhere here
+
+    def get_age(self):
+        return self.__age
+
+    def show(self):
+        print(f"Name: {self.name}, Contact: {self._contact}")
+
+# ============ Doctor Class ============
+class Doctor(Person):
+    def __init__(self, name, age, contact, specialization):
+        super().__init__(name, age, contact)
+        self.specialization = specialization
+        self.patients_treated = []     # List
+        self.available_days = set()    # Set
+        self.cabin = (2, 5)            # Tuple (floor, room)
+
+    def add_patient(self, patient_name):
+        self.patients_treated.append(patient_name)
+
+    def set_availability(self, day):
+        self.available_days.add(day)
+
+    def show(self, detail=False):  # Polymorphism
+        if detail:
+            print(self__(dict))  # ERROR somewhere here
+        else:
+            print(f"Dr. {self.name} - {self.specialization}")
+
+    def execute(self):
+        print(f"Dr. {self.name} is on duty.")
+
+# ============ Patient Class ============
+class Patient(Person):
+    def __init__(self, name, age, contact, disease):
+        super__().__init__(name, age, contact)  # ERROR somewhere here
+        self.disease = disease
+        self.__bills = []              # Private
+
+    def add_bill(self, amount):
+        self__(bills).append(amount)  # ERROR somewhere here
+
+    def get_total_bill(self):
+        total = 0
+        for bill in self.__bills:
+            total += bill
+        return total
+
+    def show(self, detail=False):
+        if detail:
+            print(f"Patient: {self.name}, Disease: {self.disease}, Bills: {self.__bills}")
+        else:
+            print(f"Patient: {self.name} - {self.disease}")
+
+    def execute(self):
+        print(f"Patient {self.name} checked in.")
+
+# ============ Hospital Class ============
+class Hospital(HospitalSystem):
+    def __init__(self):
+        self.__doctors = []
+        self.__patients = []
+
+    def add_doctor(self, doctor):
+        self.__doctors.append(doctor)
+
+    def add_patient(self, patient):
+        self.__patients.append(patient)
+
+    def show_doctors(self):
+        for doc in self.__doctors:
+            doc.show()
+
+    def show_patients(self):
+        for pat in self.__patients:
+            pat.show()
+
+    def find_doctor(self, name):
+        for doc in self.__doctors:
+            if doc.name == name:
+                return doc
+        return None
+
+    def execute(self):
+        print("Hospital system running...")
+
+
+# ============ Main Execution ============
+h = Hospital()
+
+d1 = Doctor("Sharma", 45, "9876543210", "Cardiology")
+d1.set_availability("Monday")
+d1.set_availability("Thursday")
+d1.add_patient("Rahul")
+
+d2 = Doctor("Verma", 38, "8765432109", "Neurology")
+
+p1 = Patient("Rahul", 30, "7654321098", "Heart Block")
+p1.add_bill(15000)
+p1.add_bill(8000)
+
+p2 = Patient("Priya", 25, "6543210987", "Migraine")
+
+h.add_doctor(d1)
+h.add_doctor(d2)
+h.add_patient(p1)
+h.add_patient(p2)
+
+h.show_doctors()
+h.show_patients()
+print(f"Rahul's total bill: {p1.get_total_bill()}")
+print(f"Dr. Sharma's age: {d1.get_age()}")
+print(d1.__specialization)  # ERROR somewhere here
+d1.execute()
+p1.execute()
+h.execute()
