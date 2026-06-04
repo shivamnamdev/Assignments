@@ -1,5 +1,18 @@
 # Let's Begin 
 
+# 📚 Topics Covered:
+
+# Lists — Nested lists, loops, indexing, conditions, bubble sort logic, negative indexing
+# Strings — Slicing, string methods (find, index, replace, count), reversal, palindrome check, concatenation
+# Dictionaries — Nested dictionaries, looping, conditions, pop(), update(), del operations
+# File Handling + Exception Handling + Functions — File modes (r, w, a, x), try-except-else-finally, menu-driven programs
+# OOPs (Object-Oriented Programming) — Classes, constructors, methods, encapsulation, debugging & extending existing code
+
+#🎯 Scoring Criteria:
+
+# Each question carries equal weightage
+# You must write clean, working code with proper logic
+# Partial marks will be given for approach
 
 # ------------------------------------------
 
