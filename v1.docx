@@ -1,0 +1,93 @@
+Question 1: Advanced List — Student Marks Analyzer
+
+Problem: You are given a list of students with their marks in 5 subjects. Write a program that:
+
+Stored data as a nested list: 
+[
+    ["Rahul", 78, 85, 90, 67, 72], 
+    ["Sonal", 92, 88, 76, 95, 81], 
+    ...
+]
+
+- Finds the topper (highest average) and lowest scorer using loops
+- Returns a new list containing only students who scored above 80 in at least 3 subjects (use indexing + conditions)
+- Sorts the list by average marks in descending order without using sort() (use nested loops — bubble sort logic)
+- Uses negative indexing to access the last 2 subjects' marks and prints students who improved (last subject > second-last subject)
+
+
+
+
+---
+
+Question 2: Advanced String — Password Strength Validator & Formatter
+
+Problem: Write a program that perform following operations on a string password:
+
+
+- Uses slicing to extract the first 4 and last 4 characters, check if they contain at least 1 uppercase and 1 digit each
+- Loops through the string to count uppercase, lowercase, digits, and special characters
+- Uses find(), index(), replace(), and count() to detect repeated patterns (e.g., "aa", "11") and flag them as weak
+- Reverses the string using slicing ([::-1]) and checks if any 3-character substring is a palindrome
+- Generates a masked version using string concatenation: show first 2 chars + * repeated for middle + last 2 chars (like Pa******d1)
+- Rates password as: Weak / Medium / Strong based on all above checks
+
+
+
+---
+
+Question 3: Advanced Dictionary — Employee Payroll System
+
+Problem: Created an employee payroll system using nested dictionaries, Perform the following operations:
+
+- Loops through all employees and calculates net salary (deduct 500 per absent day if attendance < 22 days)
+- Uses conditions to categorize employees into salary bands: <20000 = "Junior", 20000-50000 = "Mid", >50000 = "Senior"
+- Finds the department with the highest average salary by grouping employees using a new dictionary built with loops
+- Implements pop(), update(), and del to handle: transfer (change department), fire (remove employee), and promote (update salary)
+- Prints a final payslip dictionary for each employee with keys: name, gross, deductions, net, band
+
+
+---
+
+
+Question 4: Advanced File Handling + Exception Handling + Functions
+
+Problem: Build a Task Logger System using file handling and exception handling wrapped in functions:
+
+Main Program with menu:
+1. Create Log  
+2. Add Task  
+3. View Tasks  
+4. Search Task  
+5. Delete Task  
+6. Generate Report  
+7. Exit
+
+Wrap the entire menu in a while loop with try-except for invalid input
+
+Each function must:
+- Use try-except-else-finally properly
+- Handle at least 2 specific exceptions
+- Use file modes: r, w, a, x appropriately
+- Print meaningful error messages using Exception as e
+
+
+
+---
+
+Question 5: Advanced OOPs — Fix & Extend the Hospital Management System
+Instructions: Below is a Hospital Management System written by a junior developer. It has 8 errors (syntax, logical, OOP-related). Your task:
+
+1. Find and fix all 8 errors (mark each with a comment explaining what was wrong)
+2. Add the requested functionality as per the tasks mentioned below
+
+After fixing all errors, ADD the following functionality:
+Task 1: Add a method discharge_patient(self, patient_name) in Hospital class that removes a patient by name from self.__patients. If not found, print "Patient not found".
+
+Task 2: Add a method get_doctor_report(self, doctor_name) in Hospital class that returns a dictionary:
+```
+{"name": "Dr. Sharma", "specialization": "Cardiology", "patients_count": 1, "available_days": {"Monday", "Thursday"}}
+If doctor not found, print "Doctor not found".
+```
+Task 3: Add a method calculate_discount(self) in Patient class — if get_total_bill() > 20000, return 10% discount amount, else return 0.
+
+Task 4: Add a method show_cabin(self) in Doctor class that prints: "Dr. Sharma - Floor: 2, Room: 5" using tuple unpacking from self.cabin.
