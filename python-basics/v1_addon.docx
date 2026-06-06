@@ -92,6 +92,33 @@ employees = {
 # 6. Promote emp 101 (salary + 10000)
 # 7. Print final payslip for all remaining employees
 
+# Expected Output:
+# IT Average Salary = 37500.0
+# HR Average Salary = 40000.0
+# Finance Average Salary = 60000.0
+
+# Highest Paying Department: Finance
+# Average Salary: 60000.0
+
+# Employee 103 transferred to Finance
+# Employee 105 removed
+# Employee 101 promoted
+# Attendance popped from Smeeta: 21
+
+# FINAL PAYSLIPS
+
+# Employee ID: 101
+# {'name': 'Rahul', 'gross': 55000, 'deductions': 1000, 'net': 54000, 'band': 'Senior'}
+# ----------------------------------------
+# Employee ID: 102
+# {'name': 'Priya', 'gross': 55000, 'deductions': 0, 'net': 55000, 'band': 'Senior'}
+# ----------------------------------------
+# Employee ID: 103
+# {'name': 'Amit', 'gross': 30000, 'deductions': 2000, 'net': 28000, 'band': 'Mid'}
+# ----------------------------------------
+# Employee ID: 104
+# {'name': 'Smeeta', 'gross': 60000, 'deductions': 500, 'net': 59500, 'band': 'Senior'}
+----------------------------------------
 
 # ------------------------------------------
 
@@ -258,3 +285,31 @@ print(d1.__specialization)  # ERROR somewhere here
 d1.execute()
 p1.execute()
 h.execute()
+
+
+# Expected Output
+# Dr. Sharma - Cardiology
+# Dr. Verma - Neurology
+# Patient: Rahul - Heart Block
+# Patient: Priya - Migraine
+# Rahul's total bill: 23000
+# Dr. Sharma's age: 45
+# Cardiology
+# Dr. Sharma is on duty.
+# Patient Rahul checked in.
+# Hospital system running...
+
+# Doctor Report
+# {'name': 'Dr. Sharma', 'specialization': 'Cardiology', 'patients_count': 1, 'available_days': {'Thursday', 'Monday'}}
+
+# Discount
+# 2300.0
+
+# Cabin Details
+# Dr. Sharma - Floor: 2, Room: 5
+
+# Discharge Patient
+# Priya discharged successfully
+
+# Updated Patient List
+# Patient: Rahul - Heart Block
