@@ -109,16 +109,12 @@ employees = {
 
 # Employee ID: 101
 # {'name': 'Rahul', 'gross': 55000, 'deductions': 1000, 'net': 54000, 'band': 'Senior'}
-# ----------------------------------------
 # Employee ID: 102
 # {'name': 'Priya', 'gross': 55000, 'deductions': 0, 'net': 55000, 'band': 'Senior'}
-# ----------------------------------------
 # Employee ID: 103
 # {'name': 'Amit', 'gross': 30000, 'deductions': 2000, 'net': 28000, 'band': 'Mid'}
-# ----------------------------------------
 # Employee ID: 104
 # {'name': 'Smeeta', 'gross': 60000, 'deductions': 500, 'net': 59500, 'band': 'Senior'}
-----------------------------------------
 
 # ------------------------------------------
 
