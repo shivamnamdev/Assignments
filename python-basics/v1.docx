@@ -53,7 +53,7 @@ Problem: Write a program that perform following operations on a string password:
 
 - Uses slicing to extract the first 4 and last 4 characters, check if they contain at least 1 uppercase and 1 digit each
 - Loops through the string to count uppercase, lowercase, digits, and special characters
-- Uses find(), index(), replace(), and count() to detect repeated patterns (e.g., "aa", "11") and flag them as weak
+- Uses find(), index(), replace(), and count() to detect repeated patterns (e.g., "oo", "11") and flag them as weak
 - Reverses the string using slicing ([::-1]) and checks if any 3-character substring is a palindrome
 - Generates a masked version using string concatenation: show first 2 chars + * repeated for middle + last 2 chars (like Pa******d1)
 - Rates password as: Weak / Medium / Strong based on all above checks

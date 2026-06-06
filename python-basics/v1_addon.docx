@@ -26,11 +26,16 @@ students = [
 ] 
 
 # Expected Output:
-# Topper: Smeeta (Avg: 86.4)
+# Topper: Jaskeerat (Avg: 87.0)
 # Lowest: Amit (Avg: 59.0)
 # Students with 3+ subjects above 80: ["Smeeta", "Jaskeerat"]
-# Sorted by average: [Smeeta, Jaskeerat, Rahul, Amit, Niraj]
-# Improved in last subject: ["Rahul"->No, "Smeeta"->Yes, "Amit"->No, "Jaskeerat"->Yes, "Niraj"->Yes]
+# Sorted by average: ['Jaskeerat', 'Smeeta', 'Rahul', 'Niraj', 'Amit']
+# Improvement Report
+# Rahul -> Yes
+# Smeeta -> No
+# Amit -> No
+# Jaskeerat -> Yes
+# Niraj -> Yes
 
 # ------------------------------------------
 
@@ -38,13 +43,34 @@ password = "Pyth0n@School2025!"
 
 
 # Expected Output:
-# First 4: "Pyth" -> Has uppercase: Yes, Has digit: No
-# Last 4: "25!" -> Has uppercase: No, Has digit: Yes
-# Uppercase: 2, Lowercase: 8, Digits: 5, Special: 2
-# Repeated patterns found: "0" appears... no consecutive repeats
-# Palindrome substrings (3-char): None found
-# Masked: "Py**************5!"
-# Rating: Strong
+# First 4: Pyth 
+# Has uppercase: Yes
+# Has digit: No
+
+# Last 4: 025!
+# Has uppercase: No
+# Has digit: Yes
+
+# Character Counts
+# Uppercase: 2
+# Lowercase: 9
+# Digits: 5
+# Special: 2
+
+# Repeated patterns found: oo
+# find(): 10
+# index(): 10
+# count(): 2
+# replace(): Pyth0n@Sch**l2025!
+
+# Reversed Password:
+# !5202loohcS@n0htyP
+# Palindrome substrings: ['202']
+
+# Masked Password:
+# Py**************5!
+
+# Rating: Medium
 
 # ------------------------------------------
 
@@ -53,8 +79,8 @@ employees = {
     101: {"name": "Rahul", "department": "IT", "salary": 45000, "attendance": 20},
     102: {"name": "Priya", "department": "HR", "salary": 55000, "attendance": 22},
     103: {"name": "Amit", "department": "IT", "salary": 30000, "attendance": 18},
-    104: {"name": "Sonal", "department": "Finance", "salary": 60000, "attendance": 21},
-    105: {"name": "Nischal", "department": "HR", "salary": 25000, "attendance": 22}
+    104: {"name": "Smeeta", "department": "Finance", "salary": 60000, "attendance": 21},
+    105: {"name": "Niraj", "department": "HR", "salary": 25000, "attendance": 22}
 }
 
 # Tasks:
